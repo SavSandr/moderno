@@ -2,6 +2,7 @@
 @import "global";
 @import "fonts";
 
+
 //!  start header
 
 .header__top-inner {
@@ -109,14 +110,15 @@
     }
 }
 .basket {
+    margin-right: 20px;
     span {
         background-color: $green;
     }
 }
 
 .user {
+    
     margin-left: 20px;
-    margin-right: 25px;
     padding-right: 20px;
     position: relative;
     &::before {
@@ -155,6 +157,7 @@
 .user-menu {
     border: 0px solid rgb(204, 204, 204);
     position: absolute;
+    z-index: 1;
     background-color: #fff;
     padding: 0 20px;
     width: 158px;
@@ -233,6 +236,7 @@
 
 .circle-menu {
     position: absolute;
+    z-index: 1;
     border-top: 0px solid #e0e0e0;
     top: 62px;
     right: 0;
@@ -310,7 +314,10 @@
     margin-left: 6px;
     background-color: $red;
 }
-
+.header__btn-menu,
+.menu__btn{
+    display: none;
+}
 //!  end header
 
 //!  start search
@@ -1192,3 +1199,9 @@
 }
 
 //!  end product-page
+
+
+
+
+
+@import "media";
