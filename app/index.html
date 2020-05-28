@@ -161,7 +161,8 @@
 
 
 
-                                <a href="#" class="header__btn header__btn-login ">Login</a>
+                                <a data-fancybox data-src="#modal" href="javascript:;"
+                                    class="header__btn header__btn-login">Login</a>
                                 <a href="#" class="header__btn header__btn-logout header__btn-login--off">Logout</a>
                                 <a href="#" class="header__btn header__btn-register ">Register</a>
                             </div>
@@ -1048,13 +1049,31 @@
 
         </footer>
 
-
-
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/libs.min.js"></script>
-        <script src="js/main.js"></script>
     </div>
+
+    <div id="modal">
+        <div class="login-wrapper">
+            <div class="login-title">Login</div>
+            <form>
+                <label class="login-name">
+                    <input type="text" placeholder="Name" required>
+                </label>
+                <label class="login-pass">
+                    <input type="text" placeholder="Password" required>
+                </label>
+                <button type="submit">submit</button>
+                <a href="#" class="creat-acc">Creat An Account?</a>
+                <a href="#" class="lost-past">Lost Password?</a>
+
+            </form>
+        </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
