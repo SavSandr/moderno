@@ -7,7 +7,7 @@ html {
     box-sizing: inherit;
 }
 html,
-body {
+body{
     height: 100%;
 }
 a {
@@ -36,8 +36,9 @@ body {
     flex-direction: column;
     min-height: 100%;
 }
-.content {
+.content{
     flex: 1 0 auto;
+    background-color: $gray;
 }
 .footer {
     flex: 0 0 auto;
@@ -58,8 +59,8 @@ body {
         padding: 0 15px;
     }
 }
-.main{
-    background-color: $gray;
+.header{
+    background-color: #fff;
 }
 
 .title {
