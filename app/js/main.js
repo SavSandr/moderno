@@ -40,10 +40,12 @@ $(function () {
 
     $('.menu__btn').on('click', function () {
         $('.menu__list').slideToggle();
-    })
+    });
     $('.header__btn-menu').on('click', function () {
         $('.header__box').toggleClass('active');
-    })
+    });
+
+    $('input[type="file"], select').styler();
     
 
 
@@ -55,6 +57,9 @@ $(function () {
             $('#'+id).addClass('active-tab').fadeIn();
             return false;
     });
+
+    
+
 
 
     var mixer = mixitup('.products__inner-box');
